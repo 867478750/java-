@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="GBK"?>
+<topTree>
+
+
+<!--这是一个私有的服务配置文件 manage -->
+	<!-- <dbconfig db="oracle10g">
+		<db_name>db0</db_name>
+		<db_username>system</db_username>
+		<db_passwd>123</db_passwd>
+		<db_host>127.0.0.1</db_host>
+		<db_port>1521</db_port>
+	</dbconfig> -->
+	
+<dbconfig db="oracle10g">
+		<db_name>manage</db_name>
+		<db_username>system</db_username>
+		<db_passwd>manage</db_passwd>
+		<db_host>127.0.0.1</db_host>
+		<db_port>1521</db_port>
+	</dbconfig>
+	
+	<Userconfig users="name&amp;passwd">
+		<name passwd="admin">admin</name>
+		<name passwd="a12345">admin</name>
+		<name passwd="bj">bj</name>
+		<name passwd="xa">xa</name>
+	</Userconfig>
+</topTree>

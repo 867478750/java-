@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	id="WebApp_9" version="2.4">
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	<servlet>
+		<servlet-name>Report_Servlet</servlet-name>
+		<servlet-class>com.manage.servlet.Report_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Report_Servlet</servlet-name>
+		<url-pattern> /Report_Servlet </url-pattern>
+	</servlet-mapping>
+<!-- 	<servlet>
+		<servlet-name>Login_Servlet</servlet-name>
+		<servlet-class>com.manage.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login_Servlet</servlet-name>
+		<url-pattern> /LoginServlet </url-pattern>
+	</servlet-mapping> -->
+	<servlet>
+		<servlet-name>Register_Servlet</servlet-name>
+		<servlet-class>com.manage.servlet.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register_Servlet</servlet-name>
+		<url-pattern> /RegisterServlet </url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ImportSaledata_Servlet</servlet-name>
+		<servlet-class>com.manage.servlet.ImportSaledata_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ImportSaledata_Servlet</servlet-name>
+		<url-pattern> /ImportSaledata_Servlet </url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ImportSaledataDB_Servlet</servlet-name>
+		<servlet-class>com.manage.servlet.ImportSaledataDB_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ImportSaledataDB_Servlet</servlet-name>
+		<url-pattern> /ImportSaledataDB_Servlet </url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SaleDataFind_Servlet</servlet-name>
+		<servlet-class>com.manage.servlet.SaleDataFind_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaleDataFind_Servlet</servlet-name>
+		<url-pattern> /SaleDataFind_Servlet </url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CompanyCountShow_Servlet</servlet-name>
+		<servlet-class>com.manage.servlet.CompanyCountShow_Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CompanyCountShow_Servlet</servlet-name>
+		<url-pattern> /CompanyCountShow_Servlet </url-pattern>
+	</servlet-mapping>
+</web-app>
